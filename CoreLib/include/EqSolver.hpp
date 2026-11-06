@@ -16,7 +16,7 @@ class EqSolver {
 public:
     virtual ~EqSolver() = default;
 
-    virtual std::optional<T> solve(std::function<T(T)> iFunc, T leftBoundary, T rightBoundary, T iTolerance,
+    virtual std::optional<T> solve(const std::function<T(T)> &iFunc, T leftBoundary, T rightBoundary, T iTolerance,
                                    size_t maxStepsCount) = 0;
 };
 
@@ -24,7 +24,7 @@ template<typename T>
     requires std::floating_point<T>
 class DichotomySolver final : public EqSolver<T> {
 public:
-    std::optional<T> solve(std::function<T(T)> iFunc, T leftBoundary, T rightBoundary, T iTolerance,
+    std::optional<T> solve(const std::function<T(T)> &iFunc, T leftBoundary, T rightBoundary, T iTolerance,
                            size_t maxStepsCount) override {
         if (leftBoundary > rightBoundary)
             std::swap(leftBoundary, rightBoundary);

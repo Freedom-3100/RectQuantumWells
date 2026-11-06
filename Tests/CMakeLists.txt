@@ -11,6 +11,7 @@ FetchContent_MakeAvailable(googletest)
 
 add_executable(CoreLibTests
         src/testSolver.cpp
+        src/testIntegral.cpp
 )
 
 target_link_libraries(CoreLibTests

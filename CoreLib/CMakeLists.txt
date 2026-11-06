@@ -1,5 +1,6 @@
 
-add_library(CoreLib STATIC src/EqSolver.cpp)
+add_library(CoreLib STATIC src/EqSolver.cpp
+        include/IntegralCalculator.hpp)
 
 add_library(CoreLib::CoreLib ALIAS CoreLib)
 
