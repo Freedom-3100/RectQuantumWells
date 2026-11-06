@@ -6,7 +6,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(CoreLib)
 
-add_subdirectory(UI)
+option(BUILD_UI "Build Qt user interface" ON)
+if(BUILD_UI)
+    add_subdirectory(UI)
+endif()
 
 option(BUILD_TESTS "Build tests" ON)
 if(BUILD_TESTS)

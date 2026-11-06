@@ -13,6 +13,7 @@ add_executable(CoreLibTests
         src/testSolver.cpp
         src/testIntegral.cpp
         src/testBracketFinder.cpp
+        src/testSingleWell.cpp
 )
 
 target_link_libraries(CoreLibTests
