@@ -1,0 +1,11 @@
+//
+// Created by Mikhail on 06.11.2026.
+//
+
+#ifndef RECTQUANTUMWELLS_TOOLS_HPP
+#define RECTQUANTUMWELLS_TOOLS_HPP
+
+
+
+
+#endif //RECTQUANTUMWELLS_TOOLS_HPP

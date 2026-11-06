@@ -1,0 +1,13 @@
+//
+// Created by Mikhail on 06.11.2026.
+//
+
+#ifndef RECTQUANTUMWELLS_EQSOLVER_HPP
+#define RECTQUANTUMWELLS_EQSOLVER_HPP
+
+
+class EqSolver {
+};
+
+
+#endif //RECTQUANTUMWELLS_EQSOLVER_HPP
