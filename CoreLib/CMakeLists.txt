@@ -1,4 +1,6 @@
 
 add_library(CoreLib STATIC src/EqSolver.cpp)
 
-target_include_directories(CoreLib PUBLIC includes)
+add_library(CoreLib::CoreLib ALIAS CoreLib)
+
+target_include_directories(CoreLib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)

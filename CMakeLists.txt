@@ -8,4 +8,8 @@ add_subdirectory(CoreLib)
 
 add_subdirectory(UI)
 
-add_subdirectory(Tests)
+option(BUILD_TESTS "Build tests" ON)
+if(BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(Tests)
+endif()
