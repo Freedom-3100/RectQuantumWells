@@ -10,6 +10,7 @@
 
 #include "EnergyLevel.hpp"
 
+/// Добавил проверочный коммент
 /// Связанное состояние: уровень энергии и его нормированная волновая функция psi(x)
 struct BoundState {
     EnergyLevel level;
